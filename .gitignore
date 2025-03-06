@@ -36,3 +36,4 @@ bun.lock*
 package-lock.json
 yarn.lock
 pnm.lock
+output.css
