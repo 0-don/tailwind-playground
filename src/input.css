@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@plugin "@iconify/tailwind4";
+/* https://github.com/tailwindlabs/tailwindcss/discussions/2784#discussioncomment-8428904 */
+/* @plugin "@savvywombat/tailwindcss-grid-areas"; */
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
 
 @dark-mode media;
 
@@ -31,6 +36,14 @@
 }
 
 @layer components {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
   input,
   select,
   textarea {
