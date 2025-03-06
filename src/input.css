@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+@dark-mode media;
+
+@theme {
+  --grid-template-areas-layout: "left middle middle middle right";
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-vt323: "VT323", monospace;
+  --color-300: #1e181e;
+  --color-500: #191a1e;
+  --color-primary-200: #f4908b;
+  --color-primary-300: #ea6f69;
+  --color-primary-500: #e8615a;
+  --color-primary-600: #9c3230;
+  --color-primary-700: #5e2122;
+  --color-primary-800: #451717;
+  --color-primary-900: #3c181a;
+  --color-secondary-500: #2be4ea;
+  --color-secondary-900: #295459;
+  --color-tertiary-500: #fed33f;
+  --color-active-500: #2bfea0;
+  --background-image-elips: radial-gradient(
+    ellipse at 33% 10%,
+    #461616 0%,
+    transparent 75%
+  );
+}
+
+@utility grid-areas-layout {
+  grid-template-areas: var(--grid-template-areas-layout);
+}
+
+@layer components {
+  input,
+  select,
+  textarea {
+    border: 1px solid var(--color-500);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  .prose {
+    color: var(--color-300);
+    font-family: var(--font-rajdhani);
+    line-height: 1.75;
+  }
+}
