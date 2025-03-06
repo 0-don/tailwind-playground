@@ -35,7 +35,6 @@ module.exports = {
       }
     },
   },
-  variants: {},
   plugins: [
       require('@savvywombat/tailwindcss-grid-areas'),
       require('@tailwindcss/forms'),
