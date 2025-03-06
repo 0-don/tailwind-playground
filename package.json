@@ -4,15 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.314",
-    "@iconify/tailwind4": "^1.0.6",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@iconify/tailwind4": "^1.0.6"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.11",
