@@ -1,7 +1,5 @@
 {
   "name": "tailwind-playground",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
